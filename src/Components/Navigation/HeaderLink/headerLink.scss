@@ -1,6 +1,6 @@
 .nav__link {
     position: relative;
-    color: #262626;
+    color: #231F20;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.5rem;
@@ -10,28 +10,13 @@
         margin-right: 25px;
     }
 
-    .header--sticky & {
-        color: #fff;
-
-        &::after {
-            background-color: #fff;
-        }
-
-        &--active {
-            color: #262626;
-            &::after {
-                background-color: #262626;
-            }
-        }
-    }
-
     &::after {
         content: '';
         position: absolute;
         display: block;
         height: 2px;
         width: 0;
-        background-color: #262626;
+        background-color: #231F20;
         bottom: 0;
         left: 0;
         transition: .3s ease-in-out;
@@ -47,6 +32,21 @@
     &:hover {
         &::after {
             width: 100%;
+        }
+    }
+
+    .header--sticky & {
+        color: #fff;
+
+        &::after {
+            background-color: #fff;
+        }
+
+        &--active {
+            color: magenta;
+            &::after {
+                background-color: magenta;
+            }
         }
     }
 }

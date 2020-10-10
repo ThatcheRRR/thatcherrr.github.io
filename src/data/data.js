@@ -1,4 +1,4 @@
-import { faTelegram, faGithub, faVk } from '@fortawesome/free-brands-svg-icons';
+import { faTelegram, faGithubAlt, faVk } from '@fortawesome/free-brands-svg-icons';
 
 export const links = ['About', 'Portfolio'];
 
@@ -13,7 +13,7 @@ export const contacts = [
         title: 'Github',
         link: 'https://github.com/ThatcheRRR',
         color: '#333',
-        image: faGithub
+        image: faGithubAlt
     },
     {
         title: 'VK',

@@ -1,7 +1,9 @@
 .header {
+    position: relative;
+    z-index: 1000;
     padding: 25px 0;
     text-transform: uppercase;
-    color: #262626;
+    color: #231F20;
     transition: .3s ease-in-out;
     
     &__container {

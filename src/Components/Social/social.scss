@@ -8,7 +8,7 @@
         transform-origin: 0 0;
         transition: .2s ease-in-out;
         filter: grayscale(1);
-        animation: vibing .5s ease infinite alternate paused;
+        animation: vibing .5s ease-in-out infinite alternate paused;
         
         &:hover {
             animation-play-state: running;

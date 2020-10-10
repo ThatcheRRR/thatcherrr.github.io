@@ -13,8 +13,8 @@ const App = () => {
 
   useEffect(() => {
     new WOW.WOW().init();
-    window.pageYOffset
     window.addEventListener('scroll', scrolling);
+    window.addEventListener('load', scrolling);
   }, []);
   
   useEffect(() => {
@@ -32,7 +32,7 @@ const App = () => {
   return (
     <Router>
       <Header className = {className} />
-        <main>
+        <main className = 'main'>
         <Switch>
           <Route exact path = '/' component = {About} />
           <Route path = '/about' component = {About} />
