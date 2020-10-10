@@ -1,15 +1,11 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
 import {contacts} from '../../data/data';
+import './footer.scss';
 
 const Footer = () => {
   return (
-    <footer>
-      {contacts.map((item, i) => {
-        return(
-          <NavLink key = {i} pathName = {item} />
-        );
-      })}
+    <footer className = 'footer'>
+      <h1>Footer</h1>
     </footer>
   );
 }

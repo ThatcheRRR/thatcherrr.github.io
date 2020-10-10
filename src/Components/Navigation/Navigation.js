@@ -7,7 +7,7 @@ const Navigation = () => {
   return (
     <nav className = 'header__nav nav'>
       {links.map((item, i) => (
-        <HeaderLink title = 'nav' key = {i} pathname = {item} />
+        <HeaderLink key = {i} pathname = {item} />
       ))}
     </nav>
   );
