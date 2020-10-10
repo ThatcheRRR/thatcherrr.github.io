@@ -4,7 +4,7 @@ import './headerLink.scss';
 
 const HeaderLink = ({pathname}) => {
   return (
-    <NavLink className = 'nav__link' to = {`/${pathname.toLowerCase()}`}>
+    <NavLink className = 'nav__link' activeClassName = 'nav__link--active' to = {`/${pathname.toLowerCase()}`}>
       {pathname}
     </NavLink>
   );

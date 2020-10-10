@@ -1,4 +1,5 @@
 .nav__link {
+    position: relative;
     color: #262626;
     text-decoration: none;
     font-weight: bold;
@@ -11,5 +12,41 @@
 
     .header--sticky & {
         color: #fff;
+
+        &::after {
+            background-color: #fff;
+        }
+
+        &--active {
+            color: #262626;
+            &::after {
+                background-color: #262626;
+            }
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 2px;
+        width: 0;
+        background-color: #262626;
+        bottom: 0;
+        left: 0;
+        transition: .3s ease-in-out;
+    }
+
+    &--active {
+        color: red;
+        &::after {
+            background-color: red;
+        }
+    }
+
+    &:hover {
+        &::after {
+            width: 100%;
+        }
     }
 }
