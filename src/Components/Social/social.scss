@@ -3,4 +3,26 @@
     justify-content: space-around;
     width: 100%;
     margin-bottom: 20px;
+
+    svg {
+        transform-origin: 0 0;
+        transition: .2s ease-in-out;
+        filter: grayscale(1);
+        animation: vibing .5s ease infinite alternate paused;
+        
+        &:hover {
+            animation-play-state: running;
+            filter: grayscale(0);
+        }
+    }
+}
+
+@keyframes vibing {
+    0% {
+        transform: rotateZ(0);
+    }
+
+    100% {
+        transform: rotateZ(10deg);
+    }
 }
