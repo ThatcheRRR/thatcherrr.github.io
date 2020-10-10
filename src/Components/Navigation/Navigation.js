@@ -1,12 +1,13 @@
 import React from 'react';
 import HeaderLink from './HeaderLink';
 import {links} from '../../data/data';
+import './navigation.scss';
 
 const Navigation = () => {
   return (
-    <nav>
+    <nav className = 'header__nav nav'>
       {links.map((item, i) => (
-        <HeaderLink key = {i} title = {item} />
+        <HeaderLink title = 'nav' key = {i} pathname = {item} />
       ))}
     </nav>
   );

@@ -1,0 +1,45 @@
+.header {
+    padding: 25px 0;
+    text-transform: uppercase;
+    color: #262626;
+    transition: .3s ease-in-out;
+    
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    &__author {
+        font-family: 'Dosis-Bold';
+        font-size: 2.2rem;
+    }
+
+    &--sticky {
+        position: fixed;
+        padding: 15px 0;
+        width: 100%;
+        color: #fff;
+        background-image: linear-gradient(45deg, rgba(188,0,171,1) 0%, rgba(81,0,173,1) 25%, rgba(34,0,172,1) 50%, rgba(0,79,173,1) 75%, rgba(0,128,173,1) 100%);
+        background-size: 400% 100%;
+        animation: gradient 20s ease-in-out infinite;
+
+        .header__container {
+            justify-content: space-between;
+        }
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position-x: 0;
+    }
+    50% {
+        background-position-x: 100%;
+    }
+    100% {
+        background-position-x: 0;
+    }
+}

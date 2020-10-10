@@ -1,10 +1,11 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
+import './headerLink.scss';
 
-const HeaderLink = ({title}) => {
+const HeaderLink = ({title, pathname}) => {
   return (
-    <NavLink to = {`/${title}`}>
-      {title}
+    <NavLink className = {`${title}__link`} to = {`/${pathname}`}>
+      {pathname}
     </NavLink>
   );
 }

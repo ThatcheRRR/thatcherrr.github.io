@@ -1,9 +1,15 @@
 import React from 'react';
 import Navigation from '../Navigation';
+import './header.scss';
 
-const Header = () => {
+const Header = ({className}) => {
   return (
-    <Navigation />
+    <header className = {`header ${className}`}>
+      <div className = 'header__container'>
+        <h1 className = 'header__author'>Pavel Osipau</h1>
+        <Navigation />
+      </div>
+    </header>
   );
 }
 
