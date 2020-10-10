@@ -1,0 +1,13 @@
+.footer {
+    display: flex;
+    justify-content: center;
+
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}

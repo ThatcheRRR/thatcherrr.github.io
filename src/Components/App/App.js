@@ -5,6 +5,7 @@ import Header from '../Header';
 import Footer from '../Footer';
 import About from '../About';
 import Portfolio from '../Portfolio';
+import ErrorPage from '../ErrorPage';
 import './app.scss';
 
 const App = () => {
@@ -21,7 +22,7 @@ const App = () => {
   }, []);
 
   const scrolling = () => {
-    if(window.pageYOffset >= 100) {
+    if(window.pageYOffset > 60) {
       setClassName('header--sticky');
     } else {
       setClassName('');
@@ -36,6 +37,7 @@ const App = () => {
           <Route exact path = '/' component = {About} />
           <Route path = '/about' component = {About} />
           <Route path = '/portfolio' component = {Portfolio} />
+          <Route component = {ErrorPage} />
         </Switch>
         </main>
       <Footer />
