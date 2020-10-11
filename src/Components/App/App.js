@@ -33,10 +33,6 @@ const App = () => {
     <Router>
       <Header className = {className} />
         <main className = 'main'>
-        <div className = 'main__title title'>
-          <h1 className = 'title__name'>Pavel Osipau</h1>
-          <p className = 'title__description'>Front-end developer</p>
-        </div>
         <Switch>
           <Route exact path = '/' component = {About} />
           <Route path = '/about' component = {About} />

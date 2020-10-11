@@ -4,20 +4,6 @@
     padding: 25px 0;
     text-transform: uppercase;
     transition: .3s ease-in-out;
-    
-    &__container {
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-
-        & > a {
-            color: #231F20;
-            text-decoration: none;
-            transition: .3s ease-in-out;
-        }
-    }
 
     &--sticky {
         position: fixed;
@@ -26,20 +12,32 @@
         background-image: linear-gradient(45deg, rgba(188,0,171,1) 0%, rgba(81,0,173,1) 25%, rgba(34,0,172,1) 50%, rgba(0,79,173,1) 75%, rgba(0,128,173,1) 100%);
         background-size: 400% 100%;
         animation: gradient 20s ease-in-out infinite;
-
-        .header {
-            &__container {
-                justify-content: space-between;
-                & > a {
-                    color: #fff;
-                }
-            }
-            &__author {
-                font-size: 2.2rem;
-            }
-        }
     }
 }
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0;
+
+    & > * {
+        line-height: 4rem;
+    }
+
+    &__author {
+        font-family: 'Dosis-Bold';
+        font-size: 3rem;
+        letter-spacing: 3px;
+    }
+
+    &__description {
+        font-size: 2rem;
+    }
+}
+
 
 @keyframes gradient {
     0% {
