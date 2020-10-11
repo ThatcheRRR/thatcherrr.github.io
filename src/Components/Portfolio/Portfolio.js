@@ -3,7 +3,12 @@ import './portfolio.scss';
 
 const Portfolio = () => {
   return(
-    <h1>Portfolio</h1>
+    <section className = 'main__portfolio portfolio'>
+      <div className = 'portfolio__background' />
+      <div className = 'portfolio__container'>
+        <h1>Portfolio</h1>
+      </div>
+    </section>
   )
 };
 
