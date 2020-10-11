@@ -23,7 +23,7 @@ const App = () => {
 
   const scrolling = () => {
     if(window.pageYOffset > 60) {
-      setClassName('header--sticky');
+      setClassName('nav--sticky');
     } else {
       setClassName('');
     }

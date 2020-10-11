@@ -3,10 +3,10 @@ import { Route, Switch } from 'react-router-dom';
 import Navigation from '../Navigation';
 import './header.scss';
 
-const Header = ({className}) => {
+const Header = ({ className }) => {
   return (
-    <header className = {`header ${className}`}>
-      <Navigation />
+    <header className = 'header'>
+      <Navigation className = {className} />
       <div className = 'header__title title'>
         <h1 className = 'title__author'>Pavel Osipau</h1>
         <p className = 'title__description'>Front-end developer</p>

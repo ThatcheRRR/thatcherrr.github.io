@@ -6,16 +6,18 @@ import { faCode } from '@fortawesome/free-solid-svg-icons';
 import { links } from '../../data/data';
 import './navigation.scss';
 
-const Navigation = () => {
+const Navigation = ({ className }) => {
   return (
-    <nav className = 'header__nav nav'>
-      <Link to = '/'>
-        <FontAwesomeIcon icon = {faCode} size = '2x' />
-      </Link>
-      <div className = 'nav__titles'>
-        {links.map((item, i) => (
-          <HeaderLink key = {i} pathname = {item} />
-        ))}
+    <nav className = {`header__nav nav ${className}`}>
+      <div className = 'nav__container'>
+        <Link to = '/'>
+          <FontAwesomeIcon icon = {faCode} size = '2x' />
+        </Link>
+        <div className = 'nav__titles'>
+          {links.map((item, i) => (
+            <HeaderLink key = {i} pathname = {item} />
+          ))}
+        </div>
       </div>
     </nav>
   );
