@@ -41,11 +41,11 @@
         &::after {
             background-color: #fff;
         }
-
+        
         &--active {
-            color: magenta;
+            color: #4d85bd;
             &::after {
-                background-color: magenta;
+                background-color: #4d85bd;
             }
         }
     }

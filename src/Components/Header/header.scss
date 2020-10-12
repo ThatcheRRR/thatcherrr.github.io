@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 50px 0;
+    padding: 50px 0;
 
     & > * {
         line-height: 4rem;
@@ -25,24 +25,41 @@
 
     &__name {
         position: relative;
-        &::after {
+        padding: 0 20px;
+        color: #231F20;
+        animation: coloring .3s ease-in-out 1s forwards;
+
+        &::before {
             content: '';
             position: absolute;
             display: block;
-            height: 2px;
+            height: 100%;
             background-color: #231F20;
-            bottom: 20%;
-            left: 0;
+            top: 0;
+            left: 50%;
+            z-index: -1;
             animation: underlining .3s ease-in-out 1s forwards;
         }
     }
 }
 
+@keyframes coloring {
+    0% {
+        color: #231F20;
+    }
+    100% {
+        color: #fff;
+    }
+}
+
+
 @keyframes underlining {
     0% {
         width: 0;
+        left: 50%;
     }
     100% {
         width: 100%;
+        left: 0;
     }
 }

@@ -9,6 +9,10 @@ const About = () => {
         <div>dasdsada</div>
         <div>dasdsada</div>
         <div>dasdsada</div>
+        <div>dasdsada</div>
+        <div>dasdsada</div>
+        <div>dasdsada</div>
+        <div>dasdsada</div>
       </div>
     </section>
   )
