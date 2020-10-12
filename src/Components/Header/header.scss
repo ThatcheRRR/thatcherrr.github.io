@@ -1,5 +1,8 @@
 .header {
+    position: relative;
+    z-index: 20;
     text-transform: uppercase;
+    background-color: #fff;
 }
 
 .title {
@@ -37,8 +40,11 @@
             background-color: #231F20;
             top: 0;
             left: 50%;
-            z-index: -1;
             animation: underlining .3s ease-in-out 1s forwards;
+        }
+
+        & h1 {
+            position: relative;
         }
     }
 }
