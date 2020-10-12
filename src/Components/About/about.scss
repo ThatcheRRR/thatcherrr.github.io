@@ -1,5 +1,7 @@
 .about {
-    background-color: #5100ad;
+    color: #fff;
+    background-color: lighten(rgba(0,128,173,1), 5%);
+
     &__container {
         max-width: 1200px;
         margin: 0 auto;

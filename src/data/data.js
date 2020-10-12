@@ -116,4 +116,16 @@ export const portfolio = [
         deploy: 'https://thatcherrr.github.io/singolo/',
         repo: 'https://github.com/ThatcheRRR/singolo'
     },
+    {
+        title: 'Palette',
+        stack: [
+            'JavaScript',
+            'HTML5',
+            'CSS3',
+            'Flex'
+        ],
+        image: 'https://hhcdn.ru/photo/599691342.png?t=1602595053&h=HvBIszz2p_QZL1luIq9R3Q',
+        deploy: 'https://thatcherrr.github.io/codejam-palette/',
+        repo: 'https://github.com/ThatcheRRR/codejam-palette/tree/codejam-palette'
+    },
 ];
