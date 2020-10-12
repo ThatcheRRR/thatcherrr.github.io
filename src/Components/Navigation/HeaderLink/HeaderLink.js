@@ -1,8 +1,8 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './headerLink.scss';
 
-const HeaderLink = ({pathname}) => {
+const HeaderLink = ({ pathname }) => {
   return (
     <NavLink className = 'nav__link' activeClassName = 'nav__link--active' to = {`/${pathname.toLowerCase()}`}>
       {pathname}

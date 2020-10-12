@@ -1,4 +1,22 @@
 import { faTelegram, faGithubAlt, faVk } from '@fortawesome/free-brands-svg-icons';
+import gamesostsFull from './project-assets/gamesosts-full.png';
+import gamesostsSmall from './project-assets/gamesosts-small.png';
+import scheduleFull from './project-assets/schedule-full.png';
+import scheduleSmall from './project-assets/schedule-small.png';
+import weatherFull from './project-assets/weather-full.png';
+import weatherSmall from './project-assets/weather-small.png';
+import piskelFull from './project-assets/piskel-full.png';
+import piskelSmall from './project-assets/piskel-small.png';
+import apiFull from './project-assets/api-full.png';
+import apiSmall from './project-assets/api-small.png';
+import todoFull from './project-assets/todo-full.png';
+import todoSmall from './project-assets/todo-small.png';
+import keyboardFull from './project-assets/keyboard-full.png';
+import keyboardSmall from './project-assets/keyboard-small.png';
+import singoloFull from './project-assets/singolo-full.png';
+import singoloSmall from './project-assets/singolo-small.png';
+import paletteFull from './project-assets/palette-full.png';
+import paletteSmall from './project-assets/palette-small.png';
 
 export const links = ['About', 'Portfolio'];
 
@@ -33,7 +51,10 @@ export const portfolio = [
             'Yandex Geocoder API',
             'Mapbox API'
         ],
-        image: 'https://hhcdn.ru/photo/599687592.png?t=1602505380&h=Me6_KraikILBIN206kXpug',
+        image: {
+            full: scheduleFull,
+            small: scheduleSmall
+        },
         deploy: 'https://schedule-team20.netlify.app/',
         repo: 'https://github.com/React-team-20/schedule'
     },
@@ -46,7 +67,10 @@ export const portfolio = [
             'Grid',
             'SCSS'
         ],
-        image: 'https://hhcdn.ru/photo/596322447.png?t=1602505380&h=N9EgSLpW5aVLUh5-H0iyFg',
+        image: {
+            full: gamesostsFull,
+            small: gamesostsSmall
+        },
         deploy: 'https://thatcherrr.github.io/songbird/',
         repo: 'https://github.com/ThatcheRRR/songbird'
     },
@@ -60,7 +84,10 @@ export const portfolio = [
             'Geocode API',
             'Weather API'
         ],
-        image: 'https://hhcdn.ru/photo/596322595.png?t=1602505380&h=nT5oYIw_NK8kPxI_cMAitg',
+        image: {
+            full: weatherFull,
+            small: weatherSmall
+        },
         deploy: 'https://thatcherrr.github.io/fancy-weather/',
         repo: 'https://github.com/ThatcheRRR/fancy-weather'
     },
@@ -71,7 +98,10 @@ export const portfolio = [
             'Canvas',
             'SCSS'
         ],
-        image: 'https://hhcdn.ru/photo/596322591.png?t=1602505380&h=TJnxJP4mCmHVfxEYqqLPzA',
+        image: {
+            full: piskelFull,
+            small: piskelSmall
+        },
         deploy: 'https://thatcherrr.github.io/simple-piskel-clone/',
         repo: 'https://github.com/ThatcheRRR/simple-piskel-clone'
     },
@@ -82,7 +112,10 @@ export const portfolio = [
             'Canvas',
             'Image API'
         ],
-        image: 'https://hhcdn.ru/photo/596323567.png?t=1602505380&h=REqpLB0OWFOdHcrm6f8gfg',
+        image: {
+            full: apiFull,
+            small: apiSmall
+        },
         deploy: 'https://thatcherrr.github.io/codejam-image-api/',
         repo: 'https://github.com/ThatcheRRR/codejam-image-api/tree/codejam-image-api'
     },
@@ -91,7 +124,10 @@ export const portfolio = [
         stack: [
             'React',
         ],
-        image: 'https://hhcdn.ru/photo/600899803.png?t=1602507707&h=6QmOoW6tFHQ0O3qCYGIf5g',
+        image: {
+            full: todoFull,
+            small: todoSmall
+        },
         deploy: 'https://thatcherrr.github.io/todo-task/',
         repo: 'https://github.com/ThatcheRRR/todo-task'
     },
@@ -100,7 +136,10 @@ export const portfolio = [
         stack: [
             'JavaScript',
         ],
-        image: 'https://hhcdn.ru/photo/596323283.png?t=1602505380&h=zZTUvlB3ka096_94YDvw6w',
+        image: {
+            full: keyboardFull,
+            small: keyboardSmall
+        },
         deploy: 'https://thatcherrr.github.io/codejam-virtual-keyboard/',
         repo: 'https://github.com/ThatcheRRR/codejam-virtual-keyboard/tree/codejam-virtual-keyboard'
     },
@@ -112,7 +151,10 @@ export const portfolio = [
             'Flex',
             'Grid'
         ],
-        image: 'https://hhcdn.ru/photo/596323103.png?t=1602507707&h=gRmU5lvou-NCHJzF9uWUxg',
+        image: {
+            full: singoloFull,
+            small: singoloSmall
+        },
         deploy: 'https://thatcherrr.github.io/singolo/',
         repo: 'https://github.com/ThatcheRRR/singolo'
     },
@@ -124,7 +166,10 @@ export const portfolio = [
             'CSS3',
             'Flex'
         ],
-        image: 'https://hhcdn.ru/photo/599691342.png?t=1602595053&h=HvBIszz2p_QZL1luIq9R3Q',
+        image: {
+            full: paletteFull,
+            small: paletteSmall
+        },
         deploy: 'https://thatcherrr.github.io/codejam-palette/',
         repo: 'https://github.com/ThatcheRRR/codejam-palette/tree/codejam-palette'
     },
