@@ -8,6 +8,7 @@ import './navigation.scss';
 
 const Navigation = () => {
   const [className, setClassName] = useState('');
+  const [isBurgerActive, setActiveBurger] = useState(false);
 
   const scrolling = () => {
     if(window.pageYOffset > 60) {
@@ -15,6 +16,10 @@ const Navigation = () => {
     } else {
       setClassName('');
     }
+  };
+
+  const handleClick = () => {
+    setActiveBurger(prev => !prev);
   };
 
   useEffect(() => {
@@ -37,7 +42,7 @@ const Navigation = () => {
             <HeaderLink key = {i} pathname = {item} />
           ))}
         </div>
-        <div className = 'nav__burger burger'>
+        <div onClick = {handleClick} className = {`nav__burger burger ${isBurgerActive ? 'burger--open' : ''}`}>
           <span className = 'burger__line burger__line--first'></span>
           <span className = 'burger__line burger__line--main'></span>
           <span className = 'burger__line burger__line--last'></span>
