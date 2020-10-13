@@ -14,7 +14,7 @@ const About = () => {
         </div>
         <div className = 'about__description wow fadeInRight' data-wow-duration = '1s'>
           <p className = 'about__intro'>
-            Hi! I'm a Junior Front-end developer who is in search of his first job offer :)
+            Hi! I'm a Junior Front-end developer who is in search of his first job offer <span className = 'about__smile'>:</span>
             <p>
               There are some information about me down below.
             </p>

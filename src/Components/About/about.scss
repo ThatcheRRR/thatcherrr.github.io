@@ -31,6 +31,12 @@
             object-fit: cover;
         }
     }
+
+    &__smile {
+        &::after {
+            content: ')';
+        }
+    }
 }
 
 .theme {
