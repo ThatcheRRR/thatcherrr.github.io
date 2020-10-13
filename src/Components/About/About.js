@@ -13,16 +13,16 @@ const About = () => {
           </picture>
         </div>
         <div className = 'about__description wow fadeInRight' data-wow-duration = '1s'>
-          <p className = 'about__intro'>
+          <div className = 'about__intro'>
             Hi! I'm a Junior Front-end developer who is in search of his first job offer <span className = 'about__smile'>:</span>
             <p>
               There are some information about me down below.
             </p>
-          </p>
-          <article class = 'about__education theme'>
-            <p className = 'theme__header'>
+          </div>
+          <article className = 'about__education theme'>
+            <div className = 'theme__header'>
               <h3 className = 'theme__title'>Education</h3>
-            </p>
+            </div>
             <ul className = 'theme__list list'>
               <li className = 'list__item item'>
                 <h4 className = 'item__header'>
@@ -44,9 +44,9 @@ const About = () => {
             </ul>
           </article>
           <article className = 'about__courses theme'>
-            <p className = 'theme__header'>
+            <div className = 'theme__header'>
               <h3 className = 'theme__title'>Courses</h3>
-            </p>
+            </div>
             <ul className = 'theme__list list'>
               <li className = 'list__item item'>
                 <h4 className = 'item__header'>
@@ -79,9 +79,9 @@ const About = () => {
             </ul>
           </article>
           <article className = 'about__skills theme'>
-            <p className = 'theme__header'>
+            <div className = 'theme__header'>
               <h3 className = 'theme__title'>Skills</h3>
-            </p>
+            </div>
             <div className = 'theme__description'>
               HTML5, CSS3, SASS/SCSS, Git, JavaScript, React, Redux, Figma, Photoshop
             </div>

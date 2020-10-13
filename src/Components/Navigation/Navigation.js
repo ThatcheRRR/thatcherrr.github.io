@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import HeaderLink from './HeaderLink';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -6,7 +6,26 @@ import { faCode } from '@fortawesome/free-solid-svg-icons';
 import { links } from '../../data/data';
 import './navigation.scss';
 
-const Navigation = ({ className }) => {
+const Navigation = () => {
+  const [className, setClassName] = useState('');
+
+  const scrolling = () => {
+    if(window.pageYOffset > 60) {
+      setClassName('nav--sticky');
+    } else {
+      setClassName('');
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', scrolling);
+    window.addEventListener('load', scrolling);
+  }, []);
+
+  useEffect(() => {
+    return () => window.removeEventListener('scroll', scrolling)
+  }, []);
+
   return (
     <nav className = {`header__nav nav ${className}`}>
       <div className = 'nav__container'>
@@ -17,6 +36,11 @@ const Navigation = ({ className }) => {
           {links.map((item, i) => (
             <HeaderLink key = {i} pathname = {item} />
           ))}
+        </div>
+        <div className = 'nav__burger burger'>
+          <span className = 'burger__line burger__line--first'></span>
+          <span className = 'burger__line burger__line--main'></span>
+          <span className = 'burger__line burger__line--last'></span>
         </div>
       </div>
     </nav>
