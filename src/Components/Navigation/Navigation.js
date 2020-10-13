@@ -42,11 +42,11 @@ const Navigation = () => {
             <HeaderLink key = {i} pathname = {item} />
           ))}
         </div>
-        <div onClick = {handleClick} className = {`nav__burger burger ${isBurgerActive ? 'burger--open' : ''}`}>
+        {/* <div onClick = {handleClick} className = {`nav__burger burger ${isBurgerActive ? 'burger--open' : ''}`}>
           <span className = 'burger__line burger__line--first'></span>
           <span className = 'burger__line burger__line--main'></span>
           <span className = 'burger__line burger__line--last'></span>
-        </div>
+        </div> */}
       </div>
     </nav>
   );
