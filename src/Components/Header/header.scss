@@ -12,6 +12,11 @@
     flex-direction: column;
     padding: 50px 0;
 
+    @media (max-width: 576px) {
+        padding-top: 0;
+        padding-bottom: 25px;
+    }
+
     & > * {
         line-height: 4rem;
     }
@@ -20,10 +25,18 @@
         font-family: 'Dosis-Bold';
         font-size: 3rem;
         letter-spacing: 3px;
+
+        @media (max-width: 576px) {
+            letter-spacing: initial;
+        }
     }
 
     &__description {
         font-size: 2rem;
+
+        @media (max-width: 576px) {
+            font-size: 1.8rem;
+        }
     }
 
     &__name {

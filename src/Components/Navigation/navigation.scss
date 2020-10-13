@@ -48,6 +48,14 @@
         .nav {
             &__container {
                 justify-content: space-between;
+
+                @media (max-width: 1200px) {
+                    padding: 0 20px;
+                }
+
+                @media (max-width: 768px) {
+                    justify-content: space-around;
+                }
             
                 & > a {
                     color: #fff;
