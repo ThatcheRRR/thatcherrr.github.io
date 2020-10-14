@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import WOW from 'wowjs';
 import Header from '../Header';
 import Footer from '../Footer';
@@ -14,7 +14,7 @@ const App = () => {
   }, []);
 
   return (
-    <Router>
+    <>
       <Header />
         <main className = 'main'>
         <Switch>
@@ -25,7 +25,7 @@ const App = () => {
         </Switch>
         </main>
       <Footer />
-    </Router>
+    </>
   );
 }
 
