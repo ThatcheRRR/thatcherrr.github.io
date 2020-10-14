@@ -12,9 +12,10 @@ const Header = ({ className }) => {
         <p className = 'title__description'>Front-end developer</p>
         <div className = 'title__name'>
           <Switch>
+            <Route path = '/' exact render = {() => (<h1 className = 'wow fadeInDown' data-wow-duration = '1s'>About me</h1>)} />
             <Route path = '/about' render = {() => (<h1 className = 'wow fadeInDown' data-wow-duration = '1s'>About me</h1>)} />
             <Route path = '/portfolio' render = {() => (<h1 className = 'wow fadeInDown' data-wow-duration = '1s'>Portfolio</h1>)} />
-            <Route render = {() => (<h1 className = 'wow fadeInDown' data-wow-duration = '1s'>About me</h1>)} />
+            <Route render = {() => (<h1 className = 'wow fadeInDown' data-wow-duration = '1s'>Error</h1>)} />
           </Switch>
         </div>
       </div>

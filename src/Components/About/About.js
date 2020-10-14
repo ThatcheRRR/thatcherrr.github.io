@@ -16,7 +16,7 @@ const About = () => {
           <div className = 'about__intro'>
             Hi! I'm a Junior Front-end developer who is in search of his first job offer <span className = 'about__smile'>:</span>
             <p>
-              There are some information about me down below.
+              There are some information about me down below
             </p>
           </div>
           <article className = 'about__education theme'>
@@ -83,7 +83,7 @@ const About = () => {
               <h3 className = 'theme__title'>Skills</h3>
             </div>
             <div className = 'theme__description'>
-              HTML5, CSS3, SASS/SCSS, Git, JavaScript, React, Redux, Figma, Photoshop
+              HTML5, CSS3, SASS/SCSS, Git, JavaScript, React, Redux, Figma, Photoshop, Ant Design
             </div>
           </article>
         </div>
