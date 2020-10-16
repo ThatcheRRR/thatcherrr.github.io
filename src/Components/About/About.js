@@ -60,7 +60,9 @@ const About = () => {
               </li>
               <li className = 'list__item item'>
                 <h4 className = 'item__header'>
-                  The Rolling Scopes School
+                  <a href = 'https://app.rs.school/certificate/i2hacko3' target = '_blank'>
+                    The Rolling Scopes School
+                  </a>
                 </h4>
                 <p className = 'item__description'>
                   Rolling Scopes School, REACT (2020Q3)
