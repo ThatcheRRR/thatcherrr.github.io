@@ -60,7 +60,7 @@ const About = () => {
               </li>
               <li className = 'list__item item'>
                 <h4 className = 'item__header'>
-                  <a href = 'https://app.rs.school/certificate/i2hacko3' target = '_blank'>
+                  <a href = 'https://app.rs.school/certificate/mfnztlra' target = '_blank'>
                     The Rolling Scopes School
                   </a>
                 </h4>
