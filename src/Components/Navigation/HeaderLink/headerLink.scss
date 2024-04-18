@@ -1,52 +1,54 @@
 .nav__link {
-    position: relative;
-    color: #231F20;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.5rem;
+  position: relative;
+  color: #231F20;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: .3s ease-in-out;
+
+  &:not(:last-of-type) {
+    margin-right: 25px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: #231F20;
+    bottom: 0;
+    left: 0;
     transition: .3s ease-in-out;
-    
-    &:not(:last-of-type) {
-        margin-right: 25px;
-    }
+  }
+
+  &--active {
+    color: red;
 
     &::after {
-        content: '';
-        position: absolute;
-        display: block;
-        height: 2px;
-        width: 0;
-        background-color: #231F20;
-        bottom: 0;
-        left: 0;
-        transition: .3s ease-in-out;
+      background-color: red;
+    }
+  }
+
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+  }
+
+  .nav--sticky & {
+    color: #fff;
+
+    &::after {
+      background-color: #fff;
     }
 
     &--active {
-        color: red;
-        &::after {
-            background-color: red;
-        }
-    }
+      color: #00ff4f;
 
-    &:hover {
-        &::after {
-            width: 100%;
-        }
+      &::after {
+        background-color: #00ff4f;
+      }
     }
-
-    .nav--sticky & {
-        color: #fff;
-
-        &::after {
-            background-color: #fff;
-        }
-        
-        &--active {
-            color: #00ff4f;
-            &::after {
-                background-color: #00ff4f;
-            }
-        }
-    }
+  }
 }

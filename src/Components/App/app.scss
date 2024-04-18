@@ -1,31 +1,31 @@
 @font-face {
-    font-family: 'Dosis';
-    src: url('../../assets/Dosis-Regular.ttf');
+  font-family: 'Dosis';
+  src: url('../../assets/Dosis-Regular.ttf');
 }
 
 @font-face {
-    font-family: 'Dosis-Bold';
-    src: url('../../assets/Dosis-Bold.ttf');
+  font-family: 'Dosis-Bold';
+  src: url('../../assets/Dosis-Bold.ttf');
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Dosis';
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Dosis', sans-serif;
+  box-sizing: border-box;
 }
 
 body {
-    position: relative;
+  position: relative;
 
-    @media (max-width: 1200px) {
-        padding: 0 10px;
-    }
+  @media (max-width: 1200px) {
+    padding: 0 10px;
+  }
 }
 
 .main {
-    position: relative;
-    z-index: 5;
-    margin-bottom: 122px;
-    background-color: #fff;
+  position: relative;
+  z-index: 5;
+  margin-bottom: 122px;
+  background-color: #fff;
 }

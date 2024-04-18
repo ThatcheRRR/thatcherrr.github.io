@@ -1,18 +1,17 @@
 .error-page {
-    height: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
-    background-color: darken(rgba(188,0,171,1), 5%);
-    justify-content: space-evenly;
-    color: #fff;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  background-color: darken(rgba(188, 0, 171, 1), 5%);
+  color: #fff;
 
-    &__title {
-        font-size: 2.3rem;
-    }
+  &__title {
+    font-size: 2.3rem;
+  }
 
-    &__description {
-        font-size: 1.8rem;
-    }
+  &__description {
+    font-size: 1.8rem;
+  }
 }

@@ -1,85 +1,85 @@
 .header {
-    position: relative;
-    z-index: 20;
-    text-transform: uppercase;
-    background-color: #fff;
+  position: relative;
+  z-index: 20;
+  text-transform: uppercase;
+  background-color: #fff;
 }
 
 .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0;
+
+  @media (max-width: 576px) {
+    padding-top: 0;
+    padding-bottom: 25px;
+  }
+
+  & > * {
+    line-height: 4rem;
+  }
+
+  &__author {
+    font-family: 'Dosis-Bold', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 3px;
 
     @media (max-width: 576px) {
-        padding-top: 0;
-        padding-bottom: 25px;
+      font-size: 2.9rem;
+      letter-spacing: 0;
+    }
+  }
+
+  &__description {
+    font-size: 2rem;
+
+    @media (max-width: 576px) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__name {
+    position: relative;
+    padding: 0 20px;
+    color: #231F20;
+    animation: coloring .3s ease-in-out 1s forwards;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 100%;
+      background-color: #231F20;
+      top: 0;
+      left: 50%;
+      animation: underlining .3s ease-in-out 1s forwards;
     }
 
-    & > * {
-        line-height: 4rem;
+    & h1 {
+      position: relative;
     }
-
-    &__author {
-        font-family: 'Dosis-Bold';
-        font-size: 3rem;
-        letter-spacing: 3px;
-
-        @media (max-width: 576px) {
-            font-size: 2.9rem;
-            letter-spacing: 0;
-        }
-    }
-
-    &__description {
-        font-size: 2rem;
-
-        @media (max-width: 576px) {
-            font-size: 1.8rem;
-        }
-    }
-
-    &__name {
-        position: relative;
-        padding: 0 20px;
-        color: #231F20;
-        animation: coloring .3s ease-in-out 1s forwards;
-
-        &::before {
-            content: '';
-            position: absolute;
-            display: block;
-            height: 100%;
-            background-color: #231F20;
-            top: 0;
-            left: 50%;
-            animation: underlining .3s ease-in-out 1s forwards;
-        }
-
-        & h1 {
-            position: relative;
-        }
-    }
+  }
 }
 
 @keyframes coloring {
-    0% {
-        color: #231F20;
-    }
-    100% {
-        color: #fff;
-    }
+  0% {
+    color: #231F20;
+  }
+  100% {
+    color: #fff;
+  }
 }
 
 
 @keyframes underlining {
-    0% {
-        width: 0;
-        left: 50%;
-    }
-    100% {
-        width: 100%;
-        left: 0;
-    }
+  0% {
+    width: 0;
+    left: 50%;
+  }
+  100% {
+    width: 100%;
+    left: 0;
+  }
 }
