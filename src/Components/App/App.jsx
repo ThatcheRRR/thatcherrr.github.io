@@ -11,14 +11,14 @@ export const App = () => {
   const [lang, setLang] = useState("ru");
 
   return (
-    <HashRouter basename="/">
+    <HashRouter>
       <LanguageContext.Provider value={{ lang, setLang }}>
         <Header />
         <main className="main">
           <Routes>
-            <Route exact path="/" element={<Navigate to="/about" />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/portfolio" element={<Portfolio />} />
+            <Route exact path="/" element={<Navigate to="#/about" />} />
+            <Route path="#/about" element={<About />} />
+            <Route path="#/portfolio" element={<Portfolio />} />
           </Routes>
         </main>
         <Footer />
