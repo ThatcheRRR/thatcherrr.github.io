@@ -77,7 +77,7 @@ export const About = () => {
                 <li>
                   {languages[lang].styling}: CSS3, SASS/SCSS, Less, bootstrap, CSS {languages[lang].modules}
                 </li>
-                <li>{languages[lang].formatting}: eslint, prettier</li>
+                <li>{languages[lang].formatting}: eslint, prettier, SonarQube</li>
                 <li>{languages[lang].markup}: HTML5</li>
                 <li>
                   {languages[lang].methodologies}: Agile, Scrum, Kanban, {languages[lang].bem}

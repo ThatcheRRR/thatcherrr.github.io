@@ -33,13 +33,14 @@ const en = {
   petprojects: "Pet projects",
   bem: "BEM (for styling/structuring)",
   bundlersSetUp: "experience with set up project for both tools",
-  rest: "... and a bit experience with Graphql, Node.js, Express, MobX, Postman, Insomnia, JWT Token, set up project using Webpack for Module Federation (Microfrontends)",
+  rest: "... and a bit experience with Graphql, Node.js, Express, MobX, Postman, Insomnia, JWT Token, NativeScript, set up project using Webpack for Module Federation (Microfrontends)",
   english: "English",
   russian: "Russian",
   selectOption: "Select language",
   atlassian: "Atlassian",
   ide: "IDE",
   period: "Period",
+  responsibility: "Key responsibilities",
 };
 
 const ru = {
@@ -77,13 +78,14 @@ const ru = {
   petprojects: "Учебные проекты",
   bem: "БЭМ (для стилизации/структуры)",
   bundlersSetUp: "опыт настройки проекта с каждым сборщиком",
-  rest: "... и немного опыта с Graphql, Node.js, Express, MobX, Postman, Insomnia, JWT Token, настройка проекта с использованием Webpack для Module Federation (Микрофронтенды)",
+  rest: "... и немного опыта с Graphql, Node.js, Express, MobX, Postman, Insomnia, JWT Token, NativeScript, настройка проекта с использованием Webpack для Module Federation (Микрофронтенды)",
   english: "Английский",
   russian: "Русский",
   selectOption: "Выберите язык",
   atlassian: "Atlassian",
   ide: "IDE",
   period: "Период",
+  responsibility: "Ключевые задачи",
 };
 
 export const languages = { en, ru };
