@@ -1,6 +1,5 @@
 .nav__link {
   position: relative;
-  color: #231F20;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.5rem;
@@ -22,14 +21,6 @@
     transition: .3s ease-in-out;
   }
 
-  &--active {
-    color: red;
-
-    &::after {
-      background-color: red;
-    }
-  }
-
   &:hover {
     &::after {
       width: 100%;
@@ -42,13 +33,13 @@
     &::after {
       background-color: #fff;
     }
+  }
 
-    &--active {
-      color: #00ff4f;
+  &.active {
+    color: red;
 
-      &::after {
-        background-color: #00ff4f;
-      }
+    &::after {
+      background-color: red;
     }
   }
 }

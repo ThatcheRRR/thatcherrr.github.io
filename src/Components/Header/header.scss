@@ -10,7 +10,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 50px 0;
+  margin: 48px 0;
 
   @media (max-width: 576px) {
     padding-top: 0;
@@ -22,7 +22,6 @@
   }
 
   &__author {
-    font-family: 'Dosis-Bold', sans-serif;
     font-size: 3rem;
     letter-spacing: 3px;
 
@@ -43,8 +42,6 @@
   &__name {
     position: relative;
     padding: 0 20px;
-    color: #231F20;
-    animation: coloring .3s ease-in-out 1s forwards;
 
     &::before {
       content: '';
@@ -57,8 +54,9 @@
       animation: underlining .3s ease-in-out 1s forwards;
     }
 
-    & h1 {
+    & h2 {
       position: relative;
+      animation: coloring .3s ease-in-out 1s forwards;
     }
   }
 }

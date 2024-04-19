@@ -1,52 +1,44 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { HeaderLink } from "./HeaderLink";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { Select } from "../Select";
+import { LanguageContext } from "../../context";
 import { links } from "../../data/data";
+import { languageOptions } from "./constants";
+import { languages } from "../../languages";
 import "./navigation.scss";
 
 export const Navigation = () => {
+  const { lang, setLang } = useContext(LanguageContext);
   const [className, setClassName] = useState("");
-  const [isBurgerActive, setActiveBurger] = useState(false);
 
   const scrolling = () => {
-    if (window.pageYOffset > 60) {
+    setClassName("");
+    if (window.pageYOffset >= 60) {
       setClassName("nav--sticky");
-    } else {
-      setClassName("");
     }
-  };
-
-  const handleClick = () => {
-    setActiveBurger((prev) => !prev);
   };
 
   useEffect(() => {
     window.addEventListener("scroll", scrolling);
     window.addEventListener("load", scrolling);
-  }, []);
 
-  useEffect(() => {
     return () => window.removeEventListener("scroll", scrolling);
   }, []);
 
   return (
     <nav className={`header__nav nav ${className}`}>
       <div className="nav__container">
-        <Link to="/">
-          <FontAwesomeIcon icon={faCode} size="2x" />
-        </Link>
         <div className="nav__titles">
-          {links.map((item, i) => (
-            <HeaderLink key={i} pathname={item} />
+          {links[lang].map((item) => (
+            <HeaderLink key={item.path} path={item.path} label={item.label} />
           ))}
         </div>
-        {/* <div onClick = {handleClick} className = {`nav__burger burger ${isBurgerActive ? 'burger--open' : ''}`}>
-          <span className = 'burger__line burger__line--first'></span>
-          <span className = 'burger__line burger__line--main'></span>
-          <span className = 'burger__line burger__line--last'></span>
-        </div> */}
+        <Select
+          options={languageOptions}
+          onChange={(opt) => setLang(opt.value)}
+          placeholder={languages[lang].selectOption}
+          value={languageOptions.find((i) => i.value === lang)}
+        />
       </div>
     </nav>
   );

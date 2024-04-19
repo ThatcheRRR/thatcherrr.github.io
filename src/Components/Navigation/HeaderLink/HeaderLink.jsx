@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./headerLink.scss";
 
-export const HeaderLink = ({ pathname }) => (
-  <Link className="nav__link" to={`/${pathname.toLowerCase()}`}>
-    {pathname}
-  </Link>
+export const HeaderLink = ({ path, label }) => (
+  <NavLink className="nav__link" to={path}>
+    {label}
+  </NavLink>
 );

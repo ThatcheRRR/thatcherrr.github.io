@@ -1,11 +1,20 @@
 .portfolio {
-  // background-color: darken(rgba(188,0,171,1), 5%);
   background-color: #fff;
   color: #fff;
 
   &__container {
-    max-width: 1200px;
     margin: 0 auto;
+  }
+
+  &__pet-title {
+    margin: 8px 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.75rem;
+    font-size: 1.5rem;
+  }
+
+  &__pet-projects {
     display: grid;
     grid-template: 300px / repeat(auto-fill, minmax(300px, 1fr));
     grid-auto-flow: row;

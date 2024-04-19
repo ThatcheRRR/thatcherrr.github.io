@@ -1,22 +1,28 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useState } from "react";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import { Header } from "../Header";
 import { Footer } from "../Footer";
 import { About } from "../About";
 import { Portfolio } from "../Portfolio";
-import { ErrorPage } from "../ErrorPage";
+import { LanguageContext } from "../../context";
 import "./app.scss";
 
-export const App = () => (
-  <BrowserRouter>
-    <Header />
-    <main className="main">
-      <Routes>
-        <Route exact path="/" component={About} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/portfolio" component={Portfolio} />
-        <Route path="*" component={ErrorPage} />
-      </Routes>
-    </main>
-    <Footer />
-  </BrowserRouter>
-);
+export const App = () => {
+  const [lang, setLang] = useState("ru");
+
+  return (
+    <BrowserRouter>
+      <LanguageContext.Provider value={{ lang, setLang }}>
+        <Header />
+        <main className="main">
+          <Routes>
+            <Route exact path="/" element={<Navigate to="/about" />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+          </Routes>
+        </main>
+        <Footer />
+      </LanguageContext.Provider>
+    </BrowserRouter>
+  );
+};
