@@ -11,7 +11,7 @@ export const App = () => {
   const [lang, setLang] = useState("ru");
 
   return (
-    <HashRouter>
+    <HashRouter basename="/">
       <LanguageContext.Provider value={{ lang, setLang }}>
         <Header />
         <main className="main">
