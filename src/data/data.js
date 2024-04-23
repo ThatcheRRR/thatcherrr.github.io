@@ -362,7 +362,7 @@ export const experience = [
       en: "Development of the system for calling a doctor at home, providing payments, filling medical documents",
       ru: "Разработка системы для вызова доктора на дом, проведение оплаты, заполнение медицинских документов",
     },
-    period: "11.2020 — 06.2021",
+    period: "03.2020 — 06.2021",
     stack: {
       languages: ["TypeScript", "JavaScript"],
       frameworks: ["React"],
