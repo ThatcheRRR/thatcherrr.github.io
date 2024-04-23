@@ -386,7 +386,6 @@ export const experience = [
       en: [
         "Implementation the structure of a project",
         "Initialization of the project (set up Webpack, eslint, prettier, and etc.)",
-        "Transfer project from jQuery to React",
         "Typing with TypeScript",
         "Implementation of the custom UI library with MaterialUI",
         "Writing autotests with jest",
@@ -397,7 +396,6 @@ export const experience = [
       ru: [
         "Создание структуры проекта",
         "Инициализация проекта (настройка Webpack, eslint, prettier, и т.д.)",
-        "Перенос проекта с jQuery на React",
         "Типизация с помощью TypeScript",
         "Создание библиотеки компонентов на основе MaterialUI",
         "Написание автотестов с помощью jest",
