@@ -1,6 +1,6 @@
 const en = {
   intro:
-    "Hi! I'm a Front-end developer with more than 3.5 years of experience. Focused on development and implementation on React, worked on B2B and B2C projects",
+    "Hi! I'm a Front-end developer with more than 4 years of experience. Focused on development and implementation on React, worked on B2B and B2C projects",
   education: "Education",
   university: "Belarusian State University of Informatics and Radioelectronics",
   faculty: "The Faculty of Information Technologies and Control",
@@ -45,7 +45,7 @@ const en = {
 
 const ru = {
   intro:
-    "Привет! Я Фронтенд разработчик с опытом более чем 3.5 года. Основной фокус разработки и внедрения на React, работал над B2B и B2C проектами",
+    "Привет! Я Фронтенд разработчик с опытом более чем 4 года. Основной фокус разработки и внедрения на React, работал над B2B и B2C проектами",
   education: "Образование",
   university: "Белорусский государственный университет информатики и радиоэлектроники",
   faculty: "Факультет информационных технологий и управления",
