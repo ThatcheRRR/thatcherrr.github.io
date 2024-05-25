@@ -52,11 +52,6 @@ export const contacts = [
     link: "https://github.com/ThatcheRRR",
     image: faGithubAlt,
   },
-  {
-    title: "LinkedIn",
-    link: "https://www.linkedin.com/in/pavel-osipau-a25774155/",
-    image: faLinkedin,
-  },
 ];
 
 export const portfolio = [
